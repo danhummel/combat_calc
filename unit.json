@@ -1,0 +1,77 @@
+[{
+	"unit_name": "Ogor Gluttons",
+	"models": [
+		{
+			"qty": 1,
+			"name": "Ogor Glutton Crusher",
+			"atks": 4,
+			"to_hit": 3,
+			"to_wnd": 3,
+			"rend": 0,
+			"dmg": 2,
+			"abilities": [
+			{ 
+				"name": "Command-Point Reroll", 
+				"method": "reroll_1", 
+				"priority": 1, 
+				"step": 
+				"hit", 
+				"mod": 0 
+			},{ 
+				"name": "Slaughtermaster Bloodgruel", 
+				"method": "plus_1_to_hit", 
+				"priority":3, 
+				"step": "hit", 
+				"mod": 1 
+			},{ 
+				"name": "Paired Weapons", 
+				"method": "exploding_6s", 
+				"priority": 2, 
+				"step": "hit", 
+				"mod": 0 
+			},{ 
+				"namn": "Ribcracker",
+				"method": "minus_1_to_save",
+				"priority": 3,
+				"step": "save",
+				"mod": -1
+			}]
+		},
+		{
+			"qty": 11,
+			"name": "Ogor Glutton",
+			"atks": 3,
+			"to_hit": 3,
+			"to_wnd": 3,
+			"rend": 0,
+			"dmg": 2,
+			"abilities": [
+			{ 
+				"name": "Command-Point Reroll", 
+				"method": "reroll_1", 
+				"priority": 1, 
+				"step": 
+				"hit", 
+				"mod": 0 
+			},{ 
+				"name": "Slaughtermaster Bloodgruel", 
+				"method": "plus_1_to_hit", 
+				"priority":3, 
+				"step": "hit", 
+				"mod": 1 
+			},{ 
+				"name": "Paired Weapons", 
+				"method": "exploding_6s", 
+				"priority": 2, 
+				"step": "hit", 
+				"mod": 0 
+			},{ 
+				"namn": "Ribcracker",
+				"method": "minus_1_to_save",
+				"priority": 3,
+				"step": "save",
+				"mod": -1
+			}]
+		}
+	]
+}]
